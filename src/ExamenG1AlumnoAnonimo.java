@@ -29,16 +29,17 @@ public class ExamenG1AlumnoAnonimo {
 		
 	}
 	
-	/***************************************************
+	/*********************************************************************************
 						EJERCICIO 1
-	 ******************************************************/
+	 *********************************************************************************/
 	
 	
 	/*
 	 * Precondicion: number debe ser un numero mayor de 1
 	 * Postcondicion: El procedimiento va a imprimir por la salida estandar la
 	 * descomposicion en factores primos de number, mostrando para cada factor
-	 * el exponente al que esta elevado, excepto si el exponente es 1. 
+	 * el exponente al que esta elevado, excepto si el exponente es 1, que en tal caso,
+	 * se mostrara el factor unicamente. 
 	 * Entrada: int number
 	 * Salida: Nada
 	 * 
@@ -48,7 +49,7 @@ public class ExamenG1AlumnoAnonimo {
 	 */
 	public static void primeFactorDecomposition(int number) {
 		int factor=2;//Comenzamos a intentar descomponer number por el numero 2
-		int exponent=0;//exponente va a indicar cuantas veces se divide number por el mismo factor 
+		int exponent=0;//Exponente va a indicar cuantas veces se divide number por el mismo factor 
 		while(number>1) {//Mientras podamos seguir dividiendo el numero
 			while(number%factor==0) {//Mientras sea divisible por el mismo factor 
 				number=number/factor;//Dividimos el numero por factor
@@ -84,9 +85,9 @@ public class ExamenG1AlumnoAnonimo {
 		
 	}
 
-	/***************************************************
+	/**************************************************************************
 						EJERCICIO 2
-	 ******************************************************/
+	 ****************************************************************************/
 
 	/*
 	 * Precondicion: altura debe ser mayor o igual que 1
@@ -183,9 +184,9 @@ public class ExamenG1AlumnoAnonimo {
 
 
 
-	/***************************************************
+	/****************************************************************************************
 						EJERCICIO 3
-	******************************************************
+	*******************************************************************************************
 1.    ¿Qué tipo de recursividad se realiza?
 Simple y directa
 
